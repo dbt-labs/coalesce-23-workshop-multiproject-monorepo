@@ -1,3 +1,15 @@
+# ***Archival Notice***
+This repository has been archived.
+
+As a result all of its historical issues and PRs have been closed.
+
+Please *do not clone* this repo without understanding the risk in doing so:
+- It may have unaddressed security vulnerabilities
+- It may have unaddressed bugs
+
+<details>
+   <summary>Click for historical readme</summary>
+
 # 🥪 The Jaffle Shop 🦘
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dbt-labs/jaffle-shop?quickstart=1)
@@ -7,11 +19,11 @@ This is a sandbox project for exploring the basic functionality and latest featu
 
 ## Create new repo from template
 
-1. <details>
-   <summary>Click the green "Use this template" button at the top of the page to create a new repository from this template.</summary>
+1. &lt;details&gt;
+   &lt;summary&gt;Click the green &quot;Use this template&quot; button at the top of the page to create a new repository from this template.&lt;/summary&gt;
 
    ![Click 'Use this template'](/.github/static/use-template.gif)
-   </details>
+   &lt;/details&gt;
 
 2. Follow the steps to create a new repository.
 
@@ -25,11 +37,11 @@ This is a sandbox project for exploring the basic functionality and latest featu
 
 ### dbt Cloud in GitHub Codespaces / Gitpod (more customizable)
 
-1. <details>
-   <summary>In the new repository, click the green "Code" button and select "Open with Codespaces" from the dropdown. If possible, open in VSCode locally rather than the web version, performance is significantly better. You can also click the 'Open in Codespaces' badge at the top of the README, the 'Open in Gitpod' badge for a more expansive devcontainer experience.</summary>
+1. &lt;details&gt;
+   &lt;summary&gt;In the new repository, click the green &quot;Code&quot; button and select &quot;Open with Codespaces&quot; from the dropdown. If possible, open in VSCode locally rather than the web version, performance is significantly better. You can also click the 'Open in Codespaces' badge at the top of the README, the 'Open in Gitpod' badge for a more expansive devcontainer experience.&lt;/summary&gt;
 
    ![Create codespace on main](.github/static/open-codespace.gif)
-   </details>
+   &lt;/details&gt;
 
 2. Install the recommend extensions when prompted unless you have set preferences here.
 3. Run `task install`[^1] in the integrated terminal.
@@ -68,3 +80,4 @@ Once your project is set up, use the following steps to get the project ready fo
 [^3]: This will activate the virtual environment you just created. It's a long story, but because `task` runs commands in a subshell, we need to activate the virtual environment in the main shell manually so we can't put this in a task, sorry!
 [^4]: This will reload your shell and ensure the new dependencies are available.
 [^5]: This will run a `dbt seed` then `mv jaffle-data jaffle-data-loaded`, moving the sample data out of the `seed-path` now that it's loaded into your raw schema. The raw schema is meant to be accessed by all developers and production jobs as a raw database would, so once you've `dbt seed`'d it, you don't need it again, but we'll keep it around in the `jaffle-data-loaded` folder just in case. Should you ever need to load it again just ensure you've dropped the raw schema and `mv jaffle-data-loaded jaffle-data` and then `dbt seed` again.
+
